@@ -4,68 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>サポート — Catch Log</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
-    line-height: 1.8; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px;
-    color: #1a1a1a; background: #fff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e6e6e6; background: #1a1a1a; }
-    a { color: #6cb4ff; }
-  }
-  h1 { font-size: 1.6rem; border-bottom: 2px solid #2e7d52; padding-bottom: 10px; }
-  h2 { font-size: 1.15rem; margin-top: 2em; color: #2e7d52; }
-  ul { padding-left: 1.3em; }
-  li { margin: .35em 0; }
-  .card {
-    background: rgba(46,125,82,.08); border: 1px solid rgba(46,125,82,.25);
-    border-radius: 12px; padding: 16px 20px; margin: 1em 0;
-  }
-  .email { font-size: 1.1rem; font-weight: 600; }
-  footer { margin-top: 3em; font-size: .9rem; color: #888; }
-</style>
+<meta name="description" content="釣果記録アプリ Catch Log のサポート・よくある質問・お問い合わせ。">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h1>Catch Log サポート</h1>
-<p>Catch Log をご利用いただきありがとうございます。本ページでは、お問い合わせ先とよくある質問をご案内します。</p>
 
-<div class="card">
-  <p>お問い合わせ・不具合のご報告・ご要望は、こちらまでお気軽にご連絡ください。</p>
-  <p class="email">📧 <a href="mailto:s.hiro.dev2026@gmail.com">s.hiro.dev2026@gmail.com</a></p>
-  <p>アプリ内の <strong>「設定 → 改善・サポート」</strong> からも、不具合報告・機能要望をお送りいただけます。</p>
-</div>
+<header class="hero">
+  <div class="badge">🎣</div>
+  <h1>Catch Log</h1>
+  <p class="tagline">押すだけで、現在地と時刻に釣果を記録。</p>
+  <p class="sub">サポート</p>
+  <svg class="waves" viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C240,70 480,10 720,30 C960,50 1200,75 1440,35 L1440,70 L0,70 Z" fill="#eef4fa"/>
+  </svg>
+</header>
 
-<h2>Catch Log とは</h2>
-<p>「いつ・どこで・何が・どんな条件で釣れたか」を手早く記録できる、釣り人のための記録アプリです。押した瞬間の現在地・時刻で釣果を記録し、潮汐・天気・波高・水深・月齢・日の出/日の入りなどの環境データを自動でひも付けます。</p>
+<nav class="tabs">
+  <a href="./index.html">プライバシー</a>
+  <a href="./support.html" aria-current="page">サポート</a>
+</nav>
 
-<h2>よくある質問</h2>
-<ul>
-  <li><strong>記録した場所や時刻を後から変えられますか？</strong><br>
-  はい。ピンの詳細画面から、魚種・匹数・日時・位置などを編集できます。記録し忘れた釣果も、日時と場所を指定して後から追加できます。</li>
+<main>
+  <p class="lead">Catch Log をご利用いただきありがとうございます。本ページでは、お問い合わせ先とよくある質問をご案内します。</p>
 
-  <li><strong>潮汐はどのくらい正確ですか？</strong><br>
-  気象庁などの調和定数による天文潮位を自前計算しています（気象偏差を含まない参考値です）。<strong>航海用途には使用しないでください。</strong></li>
+  <section class="card highlight">
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告・ご要望は、お気軽にご連絡ください。</p>
+    <p class="email">📧 <a href="mailto:s.hiro.dev2026@gmail.com">s.hiro.dev2026@gmail.com</a></p>
+    <p>アプリ内の <strong>「設定 → 改善・サポート」</strong> からも、不具合報告・機能要望をお送りいただけます。</p>
+  </section>
 
-  <li><strong>圏外でも記録できますか？</strong><br>
-  位置と時刻は記録できます。天気・波高などオンライン取得の項目は、電波が届く場所で後から付与されます。</li>
+  <section class="card">
+    <h2>Catch Log とは</h2>
+    <p>「いつ・どこで・何が・どんな条件で釣れたか」を手早く記録できる、釣り人のための記録アプリです。押した瞬間の現在地・時刻で釣果を記録し、潮汐・天気・波高・水深・月齢・日の出/日の入りなどの環境データを自動でひも付けます。地図・カレンダー・潮見表で、自分だけの釣りデータを育てられます。</p>
+  </section>
 
-  <li><strong>アクションボタンやApple Watchで記録するには？</strong><br>
-  アプリ内の「設定 → 記録の入口」に設定手順を用意しています。アクションボタンの割り当ては iOS の「設定 → アクションボタン → ショートカット → 釣果を記録」から行います。</li>
+  <section class="card">
+    <h2>よくある質問</h2>
+    <ul>
+      <li><strong>記録した場所や時刻を後から変えられますか？</strong><br>
+      はい。ピンの詳細画面から、魚種・匹数・日時・位置などを編集できます。記録し忘れた釣果も、日時と場所を指定して後から追加できます。</li>
 
-  <li><strong>データの削除をしたい</strong><br>
-  アプリ内で個々の釣果を削除できます。アカウントごとの削除をご希望の場合は、上記メールまでご連絡ください。</li>
-</ul>
+      <li><strong>潮汐はどのくらい正確ですか？</strong><br>
+      気象庁などの調和定数による天文潮位を自前計算しています（気象偏差を含まない参考値です）。<strong>航海用途には使用しないでください。</strong></li>
 
-<h2>関連リンク</h2>
-<ul>
-  <li><a href="./index.html">プライバシーポリシー</a></li>
-</ul>
+      <li><strong>圏外でも記録できますか？</strong><br>
+      位置と時刻は記録できます。天気・波高などオンライン取得の項目は、電波が届く場所で後から付与されます。</li>
+
+      <li><strong>アクションボタンや Apple Watch で記録するには？</strong><br>
+      アプリ内の「設定 → 記録の入口」に設定手順を用意しています。アクションボタンの割り当ては iOS の「設定 → アクションボタン → ショートカット → 釣果を記録」から行います。</li>
+
+      <li><strong>グループの人数やプランの違いは？</strong><br>
+      無料プランでは参加できるグループは2つまで、1グループの無料メンバーは4人までです。プレミアムプランではグループ数・人数の制限がなくなり、釣行中のリアルタイム共有も使え、広告も非表示になります。</li>
+
+      <li><strong>データの削除をしたい</strong><br>
+      アプリ内で個々の釣果を削除できます。アカウントごとの削除をご希望の場合は、上記メールまでご連絡ください。</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>関連リンク</h2>
+    <ul>
+      <li><a href="./index.html">プライバシーポリシー</a></li>
+    </ul>
+  </section>
+</main>
 
 <footer>
-  開発者：SHOTA HIRONAKA<br>
-  最終更新日：2026年6月4日
+  Catch Log <span class="dot">·</span> 開発者：SHOTA HIRONAKA <span class="dot">·</span> 最終更新日：2026年6月17日
 </footer>
+
 </body>
 </html>
