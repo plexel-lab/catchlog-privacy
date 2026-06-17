@@ -142,3 +142,26 @@ footer {
   border-top: 1px solid var(--border);
 }
 footer .dot { opacity: .4; margin: 0 8px; }
+
+/* ---- 上部ヘッダーバー（他アプリと統一） ---- */
+.topbar {
+  position: sticky; top: 0; z-index: 30;
+  background: rgba(6, 10, 20, 0.72);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.topbar-in {
+  max-width: 980px; margin: 0 auto; padding: 9px 18px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.topbar .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
+.topbar .brand:hover { color: var(--ink); }
+.topbar .brand img { width: 28px; height: 28px; border-radius: 8px; display: block; }
+.topbar .cta {
+  padding: 8px 16px; border-radius: 999px; font-weight: 700; font-size: .85rem;
+  color: #04121f; background: linear-gradient(100deg, var(--teal), var(--cyan));
+}
+.topbar .cta:hover { color: #04121f; filter: brightness(1.06); }
+.topbar .cta.soon { color: var(--muted); background: rgba(255,255,255,.05); border: 1px solid var(--border); cursor: default; }
+/* セグメントメニューは上部バーの下に重なって固定 */
+nav.tabs { top: 60px; }
